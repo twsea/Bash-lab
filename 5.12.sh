@@ -1,10 +1,6 @@
-read FILE
-
-test -f ${FILE} > /dev/null
-
-if [ $? -eq 0 ]
+if [ -f "$1" ]
 then
-    echo "${FILE} exists"
+    echo "$1 exists"
 else
-    echo "${FILE} doen't exist"
+    echo "$1 doen't exist"
 fi

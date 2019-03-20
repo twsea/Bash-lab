@@ -1,4 +1,4 @@
-echo "Hello!"
+banner "Hello!"
 MYNAME=$(whoami)
 echo ${MYNAME}
 date +%T

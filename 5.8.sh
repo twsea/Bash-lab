@@ -3,3 +3,5 @@ do
     let t=13-i
     echo ${!t}
 done
+
+# $@
