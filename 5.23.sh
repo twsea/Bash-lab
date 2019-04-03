@@ -8,5 +8,10 @@ if [ $ANS == "No" ]
 then
 	echo "Enter catalog"
 	read CAT
-	echo $(ls ${CAT})
+	if [ -e $CAT ]
+	then
+		echo $(ls ${CAT})
+	else
+		echo "Catalog doesn't exist"
+	fi
 fi
