@@ -1,4 +1,4 @@
-list=$(ls $(pwd))
+list=$(ls *.sh)
 for item in $list
 do
 	echo -e "\nProcessing file $item"
