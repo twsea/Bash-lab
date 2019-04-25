@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ -z "$1" ]
+if [ -z "$1" -o -z "$2" ]
 then
 	echo "Error, incorrect input, try again "
 else	
